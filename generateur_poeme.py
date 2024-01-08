@@ -6,8 +6,6 @@ from tensorflow.keras.layers import Dense, Activation
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.models import load_model
 
-text = "http://cedric.cnam.fr/~thomen/cours/US330X/fleurs_mal.txt"
-
 
 # Lire le fichier texte 
 with open("fleurs_mal.txt", 'r' , encoding = 'utf8') as f:
@@ -138,7 +136,7 @@ def sample(probabilities, temperature=1.0):
     return np.argmax(random_values)
 
 # Longueur du texte à générer (en caractères)
-text_length = 200
+text_length = 300
 # Température
 temperature  = 1.0
 
